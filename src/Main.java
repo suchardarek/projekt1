@@ -1,6 +1,9 @@
 //import java.util.ArrayList;
 //import java.util.List;
 
+import excercises.calculator.BasicCalculator;
+import excercises.calculator.DefaultBasicCalculator;
+
 public class Main {
     //    start
     public static void main(String[] args) {
@@ -58,6 +61,16 @@ public class Main {
         String sign = "/";
         Calculator calc = new Calculator();
         print(calc.calculate(val1,val2,sign));
+
+        // usage of BasicCalculator and its impementations:
+
+        BasicCalculator calculator = new DefaultBasicCalculator();
+
+        calculator.add(20_000_000).divide(12.2);
+        print("BasicCalculator result: "  + calculator.getResult());
+
+        calculator.reset().add(20_000_000).divide(0);
+        print("BasicCalculator result: "  + calculator.getResult());
 
     }
 
