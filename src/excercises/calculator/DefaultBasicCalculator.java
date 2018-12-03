@@ -51,7 +51,7 @@ public class DefaultBasicCalculator implements BasicCalculator {
             result = result.divide(new BigDecimal(value), SCALE, BigDecimal.ROUND_HALF_UP);
         } catch (ArithmeticException e) {
             System.out.println("Cannot divide by 0");
-            e.printStackTrace();
+//            e.printStackTrace();
         }
         return this;
     }
