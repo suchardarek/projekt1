@@ -83,5 +83,6 @@ public abstract class Vehicle implements VehicleTypeEnabled, Driveable {
 
     public void setVehicleMileage(double vehicleMileage) {
         this.vehicleMileage = vehicleMileage;
+
     }
 }
