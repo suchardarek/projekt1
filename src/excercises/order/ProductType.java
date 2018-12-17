@@ -1,5 +1,5 @@
 package excercises.order;
 
-public enum Product {
+public enum ProductType {
     ON, Pb95, Pb98, OOL
 }

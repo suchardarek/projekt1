@@ -71,8 +71,8 @@ public class Main {
 //        calculator.reset().add(20_000_000).divide(0);
 //        print("BasicCalculator result: "  + calculator.getResult());
 
-            new TaskCar().startTascCarProject();
-
+//            new TaskCar().startTascCarProject();
+        new OrderProcess().start();
     }
 
     public static void print(String text) {
