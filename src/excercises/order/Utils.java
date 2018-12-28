@@ -1,4 +1,5 @@
 package excercises.order;
+import excercises.car.Vehicle;
 
 import java.util.Random;
 
@@ -18,4 +19,21 @@ public abstract class Utils {
         return !postalCode.trim().matches(POSTAL_CODE_PATTERN);
     }
 
+    public static byte taxValue (TaxType taxType){
+        if (taxType == TaxType._0) { return 0;}
+        else if (taxType == TaxType._8) { return 8;}
+        else {return 23;}
+    }
+
+    public static double rounding (double number){
+        number *= 100;
+        number = Math.round(number);
+        number /= 100;
+        return number;
+    }
+
+    public static VehicleType generateVehicle() {
+        int pick = new Random().nextInt(VehicleType.values().length);
+        return VehicleType.values()[pick];
+    }
 }
